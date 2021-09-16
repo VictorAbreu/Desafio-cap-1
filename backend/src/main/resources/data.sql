@@ -1,0 +1,10 @@
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1984-04-15T20:50:07.12345Z', 2, '043.336.566-74', 8000.0, 'Geralda Andrade Almeida');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1989-07-11T20:50:07.12345Z', 2, '023.336.464-16', 2200.0, 'Luiz Felipe Brandão');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1981-09-12T20:50:07.12345Z', 0, '134.886.584-86', 3000.0, 'Marcos Godoy Germano');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1987-08-11T20:50:07.12345Z', 1, '144.876.744-97', 7000.0, 'Lucas Andrade Luciano');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1995-07-21T20:50:07.12345Z', 1, '084.876.798-32', 1000.0, 'Guilherme Luiz');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1987-01-22T20:50:07.12345Z', 3, '145.355.544-18', 6000.0, 'Maria Candida Balsa');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1980-02-01T20:50:07.12345Z', 2, '022.878.114-22', 1500.0, 'Adriano Marques Galvão');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1970-06-13T20:50:07.12345Z', 1, '034.833.444-41', 9000.0, 'Jaqueline Pavão');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1985-07-17T20:50:07.12345Z', 0,  '021.226.154-16', 4000.0, 'Geraldo Bragança Brasileiro');
+INSERT INTO tb_client  (birth_date, children, cpf, income, name) VALUES (TIMESTAMP WITH TIME ZONE '1970-06-13T20:50:07.12345Z', 1, '035.893.444-41', 8000.0, 'Ana Pavão');

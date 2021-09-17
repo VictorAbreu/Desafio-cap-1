@@ -18,7 +18,6 @@ import br.com.vitt.cap1.repositories.ClientRepository;
 import br.com.vitt.cap1.services.exceptions.DatabaseException;
 import br.com.vitt.cap1.services.exceptions.ResourceNotFoundException;
 
-
 @Service
 public class ClientService {
 	
@@ -49,7 +48,7 @@ public class ClientService {
 	public ClientDTO insert(ClientDTO dto) {
 
 		Client entity = new Client();
-		entity.setName(dto.getName());
+		copyDtoToEntity(dto, entity);
 		entity = repository.save(entity);
 		return new ClientDTO(entity);
 
@@ -60,7 +59,7 @@ public class ClientService {
 
 		try {
 			Client entity = repository.getOne(id);
-			entity.setName(dto.getName());
+			copyDtoToEntity(dto, entity);
 			entity = repository.save(entity);
 			return new ClientDTO(entity);
 		} catch (EntityNotFoundException e) {
@@ -80,6 +79,16 @@ public class ClientService {
 			throw new DatabaseException("Integrity violation");
 		}
 
+	}
+	
+	private void copyDtoToEntity(ClientDTO dto, Client entity) {
+
+		entity.setName(dto.getName());
+		entity.setCpf(dto.getCpf());
+		entity.setBirthDate(dto.getBirthDate());
+		entity.setIncome(dto.getIncome());
+		entity.setChildren(dto.getChildren());
+		
 	}
 
 }
